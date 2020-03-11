@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bloc de notas</title>
+    <style>
+      body{
+        background-color: black;
+      }
+      header{
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+      }
+      input#titulo{
+        color: white;
+        background-color: black;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+        width: 100%;
+        height: 20%px;
+        outline: none;
+        border: 0;
+      }
+      #caja{
+        width: 97%;
+        height: 100%;
+        border: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      textarea#nota{
+        color: white;
+        background-color: black;
+        font-size: 14px;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        outline: none;
+      }
+      input#agregar{
+        background-color: orangered;
+        font-size: 20px;
+        margin: 0px 20px 20px 0px;
+        color: white;
+        border: 0;
+      }
+      footer{
+        display: flex;
+        flex-direction: row-reverse;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 10px 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Bloc de Notas</header>
+    <input type="text" id="titulo" placeholder="Titulo" style="text-transform: capitalize;" maxlength="50">
+    <br>
+    <div id="caja">
+    <textarea id="nota" cols="30" rows="100" style="resize: none;" placeholder="Nota" maxlength="10000"></textarea>
+    </div>
+    <footer>
+      <input type="button" id="agregar" value="Agregar">
+    </footer>
+    <script src="renderer.js"></script>
+  </body>
+</html>
